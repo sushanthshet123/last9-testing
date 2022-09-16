@@ -1,0 +1,27 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 247" width="315" height="247">
+	<title>high_cardinality (1)-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #6361d1 } 
+		.s1 { fill: none;stroke: #26d7a0 } 
+	</style>
+	<path id="Layer" class="s0" d="m121.3 126.1l36.4-23.6 36.3 23.6-36.3 23.6z"/>
+	<path id="Layer" class="s0" d="m0 126.5h121"/>
+	<path id="Layer" class="s0" d="m193.7 126.2h115.8"/>
+	<path id="Layer" class="s0" d="m157.5 90l23.6 36.3-23.6 36.3-23.6-36.3z"/>
+	<path id="Layer" class="s0" d="m157.4 17v73"/>
+	<path id="Layer" class="s0" d="m157.4 162.3v73"/>
+	<path id="Layer" class="s1" d="m183.1 100.6l-9 42.3-42.4 9 9-42.3z"/>
+	<path id="Layer" class="s1" d="m234.6 48.9l-51.6 51.6"/>
+	<path id="Layer" class="s1" d="m131.9 151.7l-51.6 51.6"/>
+	<path id="Layer" class="s1" d="m183.1 151.7l-42.4-9-9-42.3 42.4 8.9z"/>
+	<path id="Layer" class="s1" d="m234.7 203.3l-51.6-51.6"/>
+	<path id="Layer" class="s1" d="m132 100.5l-51.6-51.6"/>
+	<path id="Layer" class="s1" d="m250.5 79.5h-47v-45.5"/>
+	<path id="Layer" class="s1" d="m64 173h47v45.5"/>
+	<path id="Layer" class="s1" d="m204 219.5v-47h45.5"/>
+	<path id="Layer" class="s1" d="m110.5 33v47h-45.5"/>
+	<path id="Layer" class="s1" d="m124.4 225.2l33.2-33.2 32.2 32.2"/>
+	<path id="Layer" class="s1" d="m190.1 27.3l-33.2 33.2-32.2-32.2"/>
+	<path id="Layer" class="s1" d="m58.3 93.4l33.2 33.2-32.2 32.2"/>
+	<path id="Layer" class="s1" d="m256.2 159.1l-33.2-33.2 32.2-32.2"/>
+</svg>

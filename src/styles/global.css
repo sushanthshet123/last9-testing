@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "./posts.css";
+
+/* Fonts */
+
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url("/fonts/Manrope-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-ExtraLight";
+  src: url("/fonts/Manrope-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("/fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("/fonts/Manrope-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("/fonts/Manrope-SemiBold.ttf");
+}
+
+.manrope-regular {
+  font-family: "Manrope-Regular";
+}
+
+.manrope-bold {
+  font-family: "Manrope-Bold";
+}
+
+.manrope-extrabold {
+  font-family: "Manrope-ExtraBold";
+}
+
+.manrope-extralight {
+  font-family: "Manrope-ExtraLight";
+}
+
+.manrope-semibold {
+  font-family: "Manrope-SemiBold";
+}
+
+.manrope-medium {
+  font-family: "Manrope-Medium";
+}
+
+.pageNotFound{
+  height:90vh;
+}
+/* Blog */
+.content-heading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.meta {
+  letter-spacing: 3px;
+  font-size: 0.875rem;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+
+
+.text-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Banner Styles */
+.banner-video {
+  height: 100vh;
+  object-fit: contain;
+}
+
+.banner-home {
+  height: 60vh;
+  background-image: url("/home/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-video {
+    height: 80vh;
+  }
+
+  .banner-home {
+    background-image: url("/home/banner-mobile.jpg");
+    height: 20vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .letter-wide {
+    letter-spacing: 0.2rem;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .btnfocus:focus {
+    outline: none !important;
+  }
+
+  .text-xsm {
+    font-size: 10px;
+  }
+
+  @media (min-width: 1025px) {
+    .posthover:hover {
+      transition: all 0.4s ease;
+      transform: translate3D(0, -1px, 0) scale(1.06);
+    }
+
+    .posthover {
+      transition: 0.4s;
+    }
+  }
+
+  .share-this-popover {
+    z-index: 999 !important;
+  }
+
+  .css-1pahdxg-control {
+    box-shadow: 0 0 0 1px transparent !important;
+  }
+}
+
+.light-green {
+  color: #23d9a0;
+}
+
+.gradient-color {
+  background: linear-gradient(to right, #27d89e, #3a86ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-blue-background {
+  background-color: #0b1922;
+}
+
+.product-bg {
+  background-color: #0a1725;
+}
+
+.active-hover:hover {
+  background-color: #d4f7ec;
+}
+
+.border-color {
+  /* border-bottom-color: #15C991; */
+  border: 0.4px solid #15c991;
+}
+
+.category {
+  background-color: lightgreen;
+  color: green;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  min-width: 7rem;
+}
+
+.tag-background {
+  background-color: #26d7a0;
+}
+
+.primary-btn {
+  background-color: #26d7a0;
+}
+
+.get-a-demo {
+  border: 2px solid #F85E60;
+  background-color: #F85E60;
+  color: #fff !important;
+}
+
+/* p {
+  white-space: normal;
+  max-width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+} */
+
+.gradient-bg {
+  /* background: linear-gradient(circle, #199b9b 1%, rgba(255,255,255,1) 20%); */
+
+  /* background: radial-gradient(circle at 20% 120%, #baebd8 1%, white 50%);
+   */
+  background: radial-gradient(
+    circle at 20% 120%,
+    rgba(35, 217, 160, 0.16) 0%,
+    rgba(61, 135, 253, 0) 50%
+  );
+}
+
+.gradient-blog {
+  /* background: linear-gradient(circle, #199b9b 1%, rgba(255,255,255,1) 20%); */
+
+  /* background: radial-gradient(circle at 20% 120%, #baebd8 1%, white 50%);
+   */
+  background: radial-gradient(
+    circle at 20% 120%,
+    rgba(35, 217, 160, 0.16) 0%,
+    rgba(61, 135, 253, 0) 30%
+  );
+}
+
+.reading-progress-bar {
+  position: fixed;
+  height: 5px;
+  top: 90px;
+  background-color: #23d9a0;
+}
+
+@media (min-width: 1024px) {
+  .height-animation-open {
+    transition: max-height 1s ease-in;
+    max-height: 500px;
+    overflow: hidden;
+    animation-iteration-count: 1;
+  }
+
+  .height-animation-close {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+    animation-iteration-count: 1;
+    /* background: #d5d5d5; */
+  }
+}
+
+/* Heading */
+.heading {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.body-letter-spacing {
+  letter-spacing: 0.25px;
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+}
+
+.header-scroll {
+  border-bottom: 1px solid #f4f5f6;
+}
+
+.menu a:hover {
+  color: #23d9a0;
+}
+
+.position-center {
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.first-position {
+  position: sticky !important;
+  margin: 0 auto;
+  padding: 70px;
+  bottom: 30%;
+  transform: none !important;
+}
+
+.fixed-position {
+  position: fixed !important;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.hello {
+  position: sticky;
+  /* top: 32%; */
+  left: 50%;
+  padding: 10px;
+  top: 32%;
+  transform: translate(-50%, 0%) !important;
+}
+
+.hi{
+  position: sticky;
+  /* top: 32%; */
+  left: 50%;
+  padding: 10px;
+  top: 44%;
+  /* transform: translate(-50%, 0%) !important; */
+}

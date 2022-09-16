@@ -1,0 +1,97 @@
+@media (min-width:767px) {
+    .banner {
+        background-image: url("/img/products/primarybanner.svg");
+        height: 400px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        background-position: center center;
+        z-index: 10;
+    }
+
+    .secondarybanner {
+        background-image: url("/img/products/secondary-banner.svg");
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        z-index: 999;
+    }
+
+    .compassSecondaryBanner {
+        background-image: url("/img/products/compass-banner.svg");
+        height: 1129px;
+        width: 748px;
+        background-size: cover;
+        background-position: center center;
+        z-index: 999;
+    }
+
+    .bg {
+        background: linear-gradient(to bottom, #fff 36%, #0A1725 36% 100%);
+        z-index: 5;
+    }
+
+    .background {
+        background: linear-gradient(to bottom, #fff 51.5%, #0A1725 51.5% 100%);
+        z-index: 5;
+    }
+
+    .compassBg {
+        background-image: url("/img/products/compass-banner.svg");
+        height: 1000px;
+        background-size: cover;
+        background-position: center center;
+        z-index: 999;
+    }
+}
+
+/* Mobile Banners */
+
+@media(max-width:576px) {
+    .mobile_banner {
+        background-image: url("/img/products/mobile-banner-levitate.svg");
+        height: 140px;
+        background-size: cover;
+        background-position: center;
+        z-index: 99;
+    }
+    .compass_mobile_banner {
+        background-image: url("/img/products/compass-mobile-banner.svg");
+        height: 460px;
+        width: 325px;
+        background-size: cover;
+        background-position: center center;
+        z-index: 99;
+    }
+    .bg {
+        background: linear-gradient(to bottom, #fff 68%, #0A1725 68% 100%);
+        z-index: 5;
+    }
+    .compassBg {
+        display: none;
+    }
+}
+
+.paragrapgspacing p {
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width:2000px){
+.compassBg {
+    background-image: url("/img/products/compass-banner.svg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    z-index: 999;
+}
+
+.background {
+    background: linear-gradient(to bottom, #fff 51.5%, #0A1725 51.5% 100%);
+    z-index: 5;
+}
+
+.imageSize{
+    width:300px;
+    height:300px;
+  }
+}

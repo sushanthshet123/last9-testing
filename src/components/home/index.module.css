@@ -1,0 +1,15 @@
+
+.testimonial {
+    background-image: url("/home/testimonial-background.png");
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .testmonial_card {
+    background-color: #273747;
+  }
+  
+  .blog_card {
+    background-color: #0b1922!important;
+  }
