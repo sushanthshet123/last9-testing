@@ -22,7 +22,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-head`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

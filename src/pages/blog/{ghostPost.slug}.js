@@ -18,7 +18,7 @@ import Layout from "../../components/common/layout";
 import { getPost } from "../../lib/post";
 import ReadingProgress from "../../components/common/ReadingProgress"
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import { Title, Link, Meta } from "react-head";
 
 const ghostPostsURL = `${process.env.GATSBY_GHOST_API_URL}/ghost/api/v3/content/posts/?
 key=${process.env.GATSBY_GHOST_API_KEY}&order=published_at DESC&include=tags,authors&limit=4`
@@ -77,20 +77,18 @@ const BlogDetails = ( ) => {
 
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{post?.title}</title>
-        <meta name="description" content={post?.excerpt} />
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta property="og:title" content={post?.title} />
-        <meta property="og:description" content={post?.excerpt} />
-        <meta property="og:image" content={`${post?.feature_image}`} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={post?.title} />
-        <meta property="twitter:site" content="@last9io" />
-        <meta name="twitter:description" content={post?.excerpt} />
-        <meta name="twitter:image" content={`${post?.feature_image}`} />
-      </Helmet>
+      <Meta charSet="utf-8" />
+      <Title>{post?.title}</Title>
+      <Meta name="description" content={post?.excerpt} />
+      <Link rel="canonical" href="http://mysite.com/example" />
+      <Meta property="og:title" content={post?.title} />
+      <Meta property="og:description" content={post?.excerpt} />
+      <Meta property="og:image" content={`${post?.feature_image}`} />
+      <Meta name="twitter:card" content="summary" />
+      <Meta name="twitter:title" content={post?.title} />
+      <Meta property="twitter:site" content="@last9io" />
+      <Meta name="twitter:description" content={post?.excerpt} />
+      <Meta name="twitter:image" content={`${post?.feature_image}`} />
       <ReadingProgress target={target} />
       <div ref={target} className={`w-full lg:w-10/12 mx-auto py-8 px-5 lg:px-0`}>
         <div className="post-details max-w-screen-sm mx-auto">

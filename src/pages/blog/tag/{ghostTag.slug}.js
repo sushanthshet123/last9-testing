@@ -11,7 +11,7 @@ import { tags } from "../../../components/common/data";
 import Layout from "../../../components/common/layout";
 import { useLocation } from "@reach/router";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import { Title, Link, Meta } from "react-head";s
 
 // URL to fetch tag based posts
 // eslint-disable-next-line max-len
@@ -149,22 +149,20 @@ const Tag = () => {
   const twitterimg = "/home/banner.jpg"
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{tag?.name}</title>
-        <meta name="description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
+      <Meta charSet="utf-8" />
+      <Title>{tag?.name}</Title>
+      <Meta name="description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
          of Change Intelligence, and ${tag?.name}? Freshly minted from our stables`} />
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta name="twitter:title" content={tag?.name} />
-        <meta property="og:image" content={`${fbimg}`} />
-        <meta property="og:description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
+      <Link rel="canonical" href="http://mysite.com/example" />
+      <Meta name="twitter:title" content={tag?.name} />
+      <Meta property="og:image" content={`${fbimg}`} />
+      <Meta property="og:description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
          of Change Intelligence, and ${tag?.name}? Freshly minted from our stables`} />
-        <meta property="og:title" content={tag?.name} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
+      <Meta property="og:title" content={tag?.name} />
+      <Meta name="twitter:card" content="summary" />
+      <Meta name="twitter:description" content={`MTTR obsession > Uptime illusionary fatigue. Want to know more on how we think
          of Change Intelligence, and ${tag?.name}? Freshly minted from our stables`} />
-        <meta name="twitter:image" content={`${twitterimg}`} />
-      </Helmet>
+      <Meta name="twitter:image" content={`${twitterimg}`} />
       <Banner />
 
       {/* Tags */}
