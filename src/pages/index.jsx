@@ -30,7 +30,7 @@ const IndexPage = () => (
       <section className="flex items-center justify-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-center md:py-12 py-5 pt-10 md:text-5xl text-4xl max-w-lg manrope-extrabold mx-auto text-black">
-            From our stables
+            From our Blog
           </h1>
           <div className="hidden md:block pb-16">
             <Blogcard />
