@@ -11,7 +11,7 @@ import { tags } from "../../../components/common/data";
 import Layout from "../../../components/common/layout";
 import { useLocation } from "@reach/router";
 import { graphql } from "gatsby";
-import { Title, Link, Meta } from "react-head";s
+import { Title, Link, Meta } from "react-head";
 
 // URL to fetch tag based posts
 // eslint-disable-next-line max-len
